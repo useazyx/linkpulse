@@ -1,4 +1,4 @@
-# Atalho
+# Linkpulse
 
 Encurtador de links com estatística de clique. Você cola um endereço longo, ganha um curto (slug
 sorteado ou um apelido que você escolhe), compartilha ou imprime o QR code e vê quem abriu: cliques
@@ -31,7 +31,7 @@ aleatórios), cria o banco, aplica as migrations e carrega uma conta de demonstr
 `/api` pro backend, então não tem mais nada pra configurar. Se o seu usuário do Postgres não for
 `postgres/postgres`, ajuste o `DATABASE_URL` em `backend/.env`.
 
-**Conta de demonstração:** `demo@atalho.dev` / `atalho123`, com seis links (um desativado, um vencido)
+**Conta de demonstração:** `demo@linkpulse.dev` / `linkpulse123`, com seis links (um desativado, um vencido)
 e 60 dias de cliques. Os links curtos respondem na porta do backend: abra
 `http://localhost:3337/github` pra seguir um.
 

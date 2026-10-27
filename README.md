@@ -1,4 +1,4 @@
-# Atalho
+# Linkpulse
 
 URL shortener with click analytics. Paste a long address, get a short one (a random slug or an
 alias you pick), share it or print its QR code, and see who opened it: clicks and unique visitors
@@ -33,7 +33,7 @@ salt), creates the database, applies the migrations and loads a demo account. Th
 `/api` to the backend, so there is nothing else to configure. If your Postgres user isn't
 `postgres/postgres`, change `DATABASE_URL` in `backend/.env`.
 
-**Demo account:** `demo@atalho.dev` / `atalho123`, with six links (one switched off, one expired)
+**Demo account:** `demo@linkpulse.dev` / `linkpulse123`, with six links (one switched off, one expired)
 and 60 days of clicks. Short links answer on the backend port: open
 `http://localhost:3337/github` to follow one.
 
