@@ -37,7 +37,7 @@ describe("link QR code", () => {
 
     expect(response.statusCode).toBe(200)
     expect(response.headers["content-type"]).toContain("image/svg+xml")
-    expect(response.headers["content-disposition"]).toBe('inline; filename="atalho-cardapio.svg"')
+    expect(response.headers["content-disposition"]).toBe('inline; filename="linkpulse-cardapio.svg"')
     expect(response.body).toBe(expected)
   })
 

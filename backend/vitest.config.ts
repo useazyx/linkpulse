@@ -2,7 +2,7 @@ import { defineConfig } from "vitest/config"
 
 // No CI o banco de teste vem de fora; na máquina usa o Postgres padrão
 const TEST_DATABASE_URL =
-  process.env.TEST_DATABASE_URL ?? "postgresql://postgres:postgres@localhost:5432/atalho_test?schema=public"
+  process.env.TEST_DATABASE_URL ?? "postgresql://postgres:postgres@localhost:5432/linkpulse_test?schema=public"
 
 export default defineConfig({
   test: {
@@ -11,7 +11,7 @@ export default defineConfig({
       NODE_ENV: "test",
       DATABASE_URL: TEST_DATABASE_URL,
       TEST_DATABASE_URL,
-      JWT_SECRET: "test-secret-atalho-api",
+      JWT_SECRET: "test-secret-linkpulse-api",
       VISITOR_SALT: "test-visitor-salt",
       PUBLIC_BASE_URL: "http://short.test",
     },

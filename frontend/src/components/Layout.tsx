@@ -21,7 +21,7 @@ export function Layout() {
             <span className="grid size-7 place-items-center rounded-md bg-primary text-on-primary">
               <Link2 aria-hidden className="size-4" />
             </span>
-            <span className="text-[15px] font-semibold tracking-tight">Atalho</span>
+            <span className="text-[15px] font-semibold tracking-tight">Linkpulse</span>
           </Link>
 
           <nav aria-label="Principal" className="flex items-center gap-1">

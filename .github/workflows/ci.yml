@@ -27,8 +27,8 @@ jobs:
           --health-retries 10
 
     env:
-      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/atalho?schema=public
-      TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/atalho_test?schema=public
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/linkpulse?schema=public
+      TEST_DATABASE_URL: postgresql://postgres:postgres@localhost:5432/linkpulse_test?schema=public
       JWT_SECRET: ci-only-secret-with-enough-length
       VISITOR_SALT: ci-only-visitor-salt
 

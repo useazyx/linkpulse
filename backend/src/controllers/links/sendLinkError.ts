@@ -49,13 +49,13 @@ export function sendLinkError(rep: FastifyReply, error: unknown, context: string
       handler: () =>
         rep.status(400).send({
           error: "TargetIsShortLink",
-          message: "Não dá pra encurtar um link do próprio Atalho (ia virar redirect em loop)",
+          message: "Não dá pra encurtar um link do próprio Linkpulse (ia virar redirect em loop)",
         }),
     },
     {
       message: ALIAS_RESERVED,
       handler: () =>
-        rep.status(400).send({ error: "AliasReserved", message: "Esse apelido é usado pelo próprio Atalho, escolhe outro" }),
+        rep.status(400).send({ error: "AliasReserved", message: "Esse apelido é usado pelo próprio Linkpulse, escolhe outro" }),
     },
     {
       message: ALIAS_TAKEN,

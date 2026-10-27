@@ -5,7 +5,7 @@ const FEATURES = [
   {
     icon: <Link2 aria-hidden className="size-4" />,
     title: "Link curto com o nome que você escolher",
-    text: "Ou deixa o Atalho sortear 7 caracteres. O endereço nunca muda depois de criado.",
+    text: "Ou deixa o Linkpulse sortear 7 caracteres. O endereço nunca muda depois de criado.",
   },
   {
     icon: <ChartNoAxesColumn aria-hidden className="size-4" />,
@@ -19,7 +19,7 @@ const FEATURES = [
   },
 ]
 
-// Moldura das telas de entrar e criar conta: o formulário na frente, o que o Atalho faz do lado
+// Moldura das telas de entrar e criar conta: o formulário na frente, o que o Linkpulse faz do lado
 export function AuthShell({ title, subtitle, children }: { title: string; subtitle: string; children: ReactNode }) {
   return (
     <div className="grid min-h-dvh lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)]">
@@ -28,7 +28,7 @@ export function AuthShell({ title, subtitle, children }: { title: string; subtit
           <span className="grid size-7 place-items-center rounded-md bg-primary text-on-primary">
             <Link2 aria-hidden className="size-4" />
           </span>
-          <span className="text-[15px] font-semibold tracking-tight">Atalho</span>
+          <span className="text-[15px] font-semibold tracking-tight">Linkpulse</span>
         </p>
 
         <div className="mx-auto my-auto w-full max-w-sm py-10">

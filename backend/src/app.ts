@@ -75,7 +75,7 @@ export async function buildApp({ rateLimit = env.NODE_ENV !== "test" }: BuildApp
   await app.register(swagger, {
     openapi: {
       info: {
-        title: "Atalho API",
+        title: "Linkpulse API",
         description: "Encurtador de links com estatísticas de clique (sem guardar IP) e QR code",
         version: "1.0.0",
       },

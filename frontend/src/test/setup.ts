@@ -27,7 +27,7 @@ if (!window.matchMedia) {
     }) as MediaQueryList
 }
 
-URL.createObjectURL ??= () => "blob:atalho-teste"
+URL.createObjectURL ??= () => "blob:linkpulse-teste"
 URL.revokeObjectURL ??= () => {}
 
 // Cada teste começa com a tela limpa e sem sessão guardada

@@ -1,4 +1,4 @@
-// schema.prisma - O mapa do banco do Atalho
+// schema.prisma - O mapa do banco do Linkpulse
 // # Pra que serve?
 // - Guardar os links curtos de cada pessoa (slug, destino, validade, ativo ou não)
 // - Registrar cada clique com o que interessa pra estatística, sem guardar IP

@@ -4,7 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 import type { Link, LinkStats } from "../lib/types"
 import { mockApi, renderApp } from "../test/renderApp"
 
-const DEMO = { id: "u1", name: "Conta Demo", email: "demo@atalho.dev", created_at: "2026-09-01T00:00:00.000Z" }
+const DEMO = { id: "u1", name: "Conta Demo", email: "demo@linkpulse.dev", created_at: "2026-09-01T00:00:00.000Z" }
 
 const GITHUB: Link = {
   id: "l1",
@@ -53,7 +53,7 @@ const withSession = (handler: Handler) =>
 
 describe("link detail page", () => {
   beforeEach(() => {
-    localStorage.setItem("atalho.token", "t0k3n")
+    localStorage.setItem("linkpulse.token", "t0k3n")
   })
 
   afterEach(() => {

@@ -31,7 +31,7 @@ export class GetLinkQrService {
     if (!link) throw new Error(LINK_NOT_FOUND)
 
     const shortUrl = buildShortUrl(link.slug)
-    const fileName = `atalho-${link.slug}.${format}`
+    const fileName = `linkpulse-${link.slug}.${format}`
 
     if (format === "png") {
       const body = await QRCode.toBuffer(shortUrl, { ...QR_OPTIONS, type: "png", width: size })

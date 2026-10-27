@@ -8,7 +8,7 @@ import { errorMessage } from "../lib/api"
 import { AuthShell } from "./AuthShell"
 
 // A mesma conta que o seed do backend cria
-export const DEMO_CREDENTIALS = { email: "demo@atalho.dev", password: "atalho123" }
+export const DEMO_CREDENTIALS = { email: "demo@linkpulse.dev", password: "linkpulse123" }
 
 export function LoginPage() {
   const { login, status } = useAuth()

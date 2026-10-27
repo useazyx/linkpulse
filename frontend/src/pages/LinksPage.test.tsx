@@ -4,7 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 import type { Link } from "../lib/types"
 import { mockApi, renderApp } from "../test/renderApp"
 
-const DEMO = { id: "u1", name: "Conta Demo", email: "demo@atalho.dev", created_at: "2026-09-01T00:00:00.000Z" }
+const DEMO = { id: "u1", name: "Conta Demo", email: "demo@linkpulse.dev", created_at: "2026-09-01T00:00:00.000Z" }
 
 const makeLink = (overrides: Partial<Link>): Link => ({
   id: "l1",
@@ -35,7 +35,7 @@ const bodyOf = (fetchMock: ReturnType<typeof mockApi>, method: string) => {
 
 describe("links page", () => {
   beforeEach(() => {
-    localStorage.setItem("atalho.token", "t0k3n")
+    localStorage.setItem("linkpulse.token", "t0k3n")
   })
 
   afterEach(() => {
@@ -47,7 +47,7 @@ describe("links page", () => {
       id: "l9",
       slug: "Xy7kP2q",
       short_url: "http://localhost:3337/Xy7kP2q",
-      target_url: "https://github.com/useazyx/atalho",
+      target_url: "https://github.com/useazyx/linkpulse",
       title: null,
       total_clicks: 0,
     })
@@ -58,13 +58,13 @@ describe("links page", () => {
     })
     renderApp("/")
 
-    await userEvent.type(await screen.findByLabelText("Endereço de destino"), "github.com/useazyx/atalho")
+    await userEvent.type(await screen.findByLabelText("Endereço de destino"), "github.com/useazyx/linkpulse")
     await userEvent.click(screen.getByRole("button", { name: "Encurtar" }))
 
     expect(await screen.findByText("localhost:3337/Xy7kP2q")).toBeInTheDocument()
     expect(screen.getByRole("button", { name: "Copiar localhost:3337/Xy7kP2q" })).toBeInTheDocument()
     expect(screen.getByRole("link", { name: "Estatísticas" })).toHaveAttribute("href", "/links/l9")
-    expect(bodyOf(fetchMock, "POST")).toEqual({ target_url: "https://github.com/useazyx/atalho" })
+    expect(bodyOf(fetchMock, "POST")).toEqual({ target_url: "https://github.com/useazyx/linkpulse" })
   })
 
   it("shows a taken alias under the alias field", async () => {

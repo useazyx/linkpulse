@@ -67,7 +67,7 @@ export function QrCodeDialog({ link, onClose }: QrCodeDialogProps) {
       const url = URL.createObjectURL(blob)
       const anchor = document.createElement("a")
       anchor.href = url
-      anchor.download = `atalho-${link.slug}.${format}`
+      anchor.download = `linkpulse-${link.slug}.${format}`
       document.body.append(anchor)
       anchor.click()
       anchor.remove()

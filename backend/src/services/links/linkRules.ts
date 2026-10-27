@@ -2,7 +2,7 @@
  * linkRules.ts - As regras de negócio que a criação e a edição de link dividem
  * # Pra que serve?
  * - Guardar as mensagens de erro dos links num lugar só (o controller compara com as mesmas constantes)
- * - Conferir o destino (URL válida, http/https, não apontar pro próprio Atalho)
+ * - Conferir o destino (URL válida, http/https, não apontar pro próprio Linkpulse)
  * - Conferir a validade (tem que estar no futuro)
  * Feito por: Arthur Roberto Weege Pontes
  * Versão: 1.0.0
@@ -18,7 +18,7 @@ import { checkTargetUrl } from "../../utils/targetUrl.js"
 export const LINK_NOT_FOUND = "Link não encontrado"
 export const INVALID_TARGET_URL = "Endereço de destino inválido"
 export const TARGET_PROTOCOL_NOT_ALLOWED = "Destino precisa ser http ou https"
-export const TARGET_IS_SHORT_LINK = "Destino aponta pro próprio Atalho"
+export const TARGET_IS_SHORT_LINK = "Destino aponta pro próprio Linkpulse"
 export const ALIAS_RESERVED = "Apelido reservado"
 export const ALIAS_TAKEN = "Apelido já em uso"
 export const EXPIRATION_IN_PAST = "Validade no passado"

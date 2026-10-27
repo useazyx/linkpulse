@@ -2,7 +2,7 @@
  * targetUrl.ts - Confere se um destino pode virar link curto
  * # Pra que serve?
  * - Aceitar só http e https (nada de javascript:, data:, file:)
- * - Não deixar encurtar um link do próprio Atalho (senão dá pra montar um redirect em loop)
+ * - Não deixar encurtar um link do próprio Linkpulse (senão dá pra montar um redirect em loop)
  * Feito por: Arthur Roberto Weege Pontes
  * Versão: 1.0.0
  * Data: 2026-09-11

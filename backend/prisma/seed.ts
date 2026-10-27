@@ -23,8 +23,8 @@ import { prisma } from "../src/config/prisma.js"
 import { hashPassword } from "../src/utils/password.js"
 import { addDays, localDay } from "../src/utils/timeZone.js"
 
-export const DEMO_EMAIL = "demo@atalho.dev"
-export const DEMO_PASSWORD = "atalho123"
+export const DEMO_EMAIL = "demo@linkpulse.dev"
+export const DEMO_PASSWORD = "linkpulse123"
 
 const DAYS_OF_HISTORY = 60
 
@@ -45,9 +45,9 @@ interface DemoLink {
 const DEMO_LINKS: DemoLink[] = [
   { slug: "github", target_url: "https://github.com/useazyx", title: "Meu GitHub", clicksPerDay: 9, status: "active" },
   {
-    slug: "atalho-codigo",
-    target_url: "https://github.com/useazyx/atalho",
-    title: "Código do Atalho",
+    slug: "linkpulse-codigo",
+    target_url: "https://github.com/useazyx/linkpulse",
+    title: "Código do Linkpulse",
     clicksPerDay: 5,
     status: "active",
   },

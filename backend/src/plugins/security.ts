@@ -2,7 +2,7 @@
  * security.ts - As proteções básicas que toda API pública precisa
  * # Pra que serve?
  * - helmet: cabeçalhos de segurança
- * - cors: quais sites podem chamar a API pelo navegador (o front do Atalho roda em outra porta)
+ * - cors: quais sites podem chamar a API pelo navegador (o front do Linkpulse roda em outra porta)
  * - rate limit: segura quem manda requisição demais (e mais ainda no login e na criação de link)
  * Feito por: Arthur Roberto Weege Pontes
  * Versão: 1.0.0

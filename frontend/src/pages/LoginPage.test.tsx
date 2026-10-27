@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event"
 import { afterEach, describe, expect, it, vi } from "vitest"
 import { mockApi, renderApp } from "../test/renderApp"
 
-const DEMO = { id: "u1", name: "Conta Demo", email: "demo@atalho.dev", created_at: "2026-09-01T00:00:00.000Z" }
+const DEMO = { id: "u1", name: "Conta Demo", email: "demo@linkpulse.dev", created_at: "2026-09-01T00:00:00.000Z" }
 
 const GITHUB_LINK = {
   id: "l1",
@@ -36,7 +36,7 @@ describe("login", () => {
     mockApi(() => ({ status: 401, body: { error: "InvalidCredentials", message: "E-mail ou senha incorretos" } }))
     renderApp("/entrar")
 
-    await userEvent.type(screen.getByLabelText("E-mail"), "demo@atalho.dev")
+    await userEvent.type(screen.getByLabelText("E-mail"), "demo@linkpulse.dev")
     await userEvent.type(screen.getByLabelText("Senha"), "errada")
     await userEvent.click(screen.getByRole("button", { name: "Entrar" }))
 
@@ -59,8 +59,8 @@ describe("login", () => {
     expect(screen.getByText("Ativo")).toBeInTheDocument()
 
     const [, init] = fetchMock.mock.calls[0]
-    expect(JSON.parse(String(init?.body))).toEqual({ email: "demo@atalho.dev", password: "atalho123" })
-    expect(localStorage.getItem("atalho.token")).toBe("t0k3n")
+    expect(JSON.parse(String(init?.body))).toEqual({ email: "demo@linkpulse.dev", password: "linkpulse123" })
+    expect(localStorage.getItem("linkpulse.token")).toBe("t0k3n")
   })
 
   it("validates the sign up form before calling the API and shows a taken e-mail on the field", async () => {
@@ -77,7 +77,7 @@ describe("login", () => {
     expect(fetchMock).not.toHaveBeenCalled()
 
     await userEvent.type(screen.getByLabelText("Nome"), "Ana")
-    await userEvent.type(screen.getByLabelText("E-mail"), "demo@atalho.dev")
+    await userEvent.type(screen.getByLabelText("E-mail"), "demo@linkpulse.dev")
     await userEvent.type(screen.getByLabelText("Senha"), "senha-longa-123")
     await userEvent.click(screen.getByRole("button", { name: "Criar conta" }))
 

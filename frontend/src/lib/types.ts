@@ -1,4 +1,4 @@
-// Os formatos que a API do Atalho devolve (espelham os schemas do backend)
+// Os formatos que a API do Linkpulse devolve (espelham os schemas do backend)
 
 export type LinkStatus = "active" | "inactive" | "expired"
 

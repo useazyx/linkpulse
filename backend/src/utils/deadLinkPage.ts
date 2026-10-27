@@ -37,7 +37,7 @@ export function renderDeadLinkPage(reason: DeadLinkReason): string {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>${title} · Atalho</title>
+<title>${title} · Linkpulse</title>
 <style>
   :root { color-scheme: light dark; --bg: #f6f7f9; --card: #fff; --ink: #151a23; --muted: #5b6474; --line: #e3e6eb; }
   @media (prefers-color-scheme: dark) { :root { --bg: #0f1217; --card: #171b22; --ink: #eef1f5; --muted: #a2abb9; --line: #262c36; } }
@@ -51,7 +51,7 @@ export function renderDeadLinkPage(reason: DeadLinkReason): string {
 </head>
 <body>
 <main>
-  <p class="brand">ATALHO</p>
+  <p class="brand">LINKPULSE</p>
   <h1>${title}</h1>
   <p>${text}</p>
 </main>

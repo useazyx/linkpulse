@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { ApiError, apiBlob, apiRequest, type RequestOptions } from "../lib/api"
 import type { User } from "../lib/types"
 
-const TOKEN_KEY = "atalho.token"
+const TOKEN_KEY = "linkpulse.token"
 
 type AuthStatus = "loading" | "authenticated" | "anonymous"
 type AuthedOptions = Omit<RequestOptions, "token">

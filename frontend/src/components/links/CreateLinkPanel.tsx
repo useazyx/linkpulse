@@ -122,7 +122,7 @@ export function CreateLinkPanel() {
               value={alias}
               onChange={(event) => setAlias(event.target.value.toLowerCase())}
               error={fieldErrors.alias}
-              hint="Sem apelido, o Atalho sorteia 7 caracteres"
+              hint="Sem apelido, o Linkpulse sorteia 7 caracteres"
             />
             <TextField
               label="Título (opcional)"

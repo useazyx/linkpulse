@@ -2,7 +2,7 @@
  * linkRoutes.ts - As rotas dos links curtos (todas privadas)
  * # Pra que serve?
  * - Criar, listar, buscar, alterar e apagar links de quem está logado
- * - Criação com rate limit próprio (contra quem quer usar o Atalho pra espalhar spam)
+ * - Criação com rate limit próprio (contra quem quer usar o Linkpulse pra espalhar spam)
  * - Estatísticas e QR code de cada link
  * Feito por: Arthur Roberto Weege Pontes
  * Versão: 1.2.0

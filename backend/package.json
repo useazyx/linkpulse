@@ -1,5 +1,5 @@
 {
-  "name": "atalho-backend",
+  "name": "linkpulse-backend",
   "version": "1.0.0",
   "description": "URL shortener API with click analytics",
   "type": "module",

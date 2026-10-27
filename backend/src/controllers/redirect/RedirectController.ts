@@ -1,5 +1,5 @@
 /**
- * RedirectController.ts - O coração do Atalho: abre /abc1234 e manda pro destino
+ * RedirectController.ts - O coração do Linkpulse: abre /abc1234 e manda pro destino
  * # Pra que serve?
  * - Responder 302 pro destino e gravar o clique sem fazer a pessoa esperar o banco
  * - HEAD não conta clique (é verificador de link, não gente abrindo)

@@ -1,7 +1,7 @@
 {
-  "name": "atalho-frontend",
+  "name": "linkpulse-frontend",
   "version": "1.0.0",
-  "description": "Dashboard for the Atalho URL shortener",
+  "description": "Dashboard for the Linkpulse URL shortener",
   "private": true,
   "type": "module",
   "engines": {
